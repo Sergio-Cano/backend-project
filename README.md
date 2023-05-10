@@ -47,10 +47,24 @@ Se debe pasar el body de la siguiente forma:
 # MÉTODOS QUE REQUIEREN ESTAR AUTENTICADO
 
 7 - Añadir producto (addProduct)
-
 // POST http://localhost:PORT/products/
 
 Este producto añadido se asociará a nuestro usuario (user -> vendor_id)
 
+Se debe pasar el body de la siguiente forma:
+
+{
+    "name": "Auriculares",
+    "prize": 50
+}
 
 
+8 - Editar producto (editProduct)
+// PUT http://localhost:PORT/products/
+
+Se debe pasar el body de la siguiente forma:
+
+{
+    "name": "Auriculares",
+    "prize": 50
+}
