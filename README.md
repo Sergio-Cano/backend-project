@@ -21,8 +21,36 @@ Devuelve el listado de productos de un único vendedor.
 4 - Creación de usuario (register)
 // POST http://localhost:PORT/auth/register
 
+Se debe pasar el body de la siguiente forma:
+
+{
+    "name": "Sergio",
+    "password": "456"
+}
+
+
 5 - Inicio de sesión (login)
 // POST http://localhost:PORT/auth/login
+
+Se debe pasar el body de la siguiente forma:
+
+{
+    "name": "Sergio",
+    "password": "456"
+}
+
+
+6 - Cierre de sesión (logout)
+// POST http://localhost:PORT/auth/logout
+
+
+# MÉTODOS QUE REQUIEREN ESTAR AUTENTICADO
+
+7 - Añadir producto (addProduct)
+
+// POST http://localhost:PORT/products/
+
+Este producto añadido se asociará a nuestro usuario (user -> vendor_id)
 
 
 
