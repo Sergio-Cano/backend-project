@@ -18,8 +18,11 @@ Devuelve el listado de productos de un único vendedor.
 
 # LOS SIGUIENTES MÉTODOS IMPLICARÁN ESTAR AUTENTICADO, POR LO QUE VAMOS A COMENZAR POR CREAR NUESTRO USUARIO Y REGISTRARNOS
 
-4 - Creación de usuario
+4 - Creación de usuario (register)
 // POST http://localhost:PORT/auth/register
+
+5 - Inicio de sesión (login)
+// POST http://localhost:PORT/auth/login
 
 
 
