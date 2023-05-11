@@ -68,3 +68,7 @@ Se debe pasar el body de la siguiente forma:
     "name": "Auriculares",
     "prize": 50
 }
+
+
+9 - Borrar producto (deleteProduct)
+// PUT http://localhost:PORT/products/
