@@ -8,6 +8,7 @@ module.exports = (db) => {
     router.post("/new", authorizer, productsCtrl.addProduct(db));
     router.put("/:name", authorizer, productsCtrl.editProduct(db));
     router.delete("/:name", authorizer, productsCtrl.deleteProduct(db));
+    router.post("/:name/buy", authorizer, productsCtrl.buyProduct(db));
 
     return router;
 }

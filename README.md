@@ -60,7 +60,7 @@ Se debe pasar el body de la siguiente forma:
 
 
 8 - Editar producto (editProduct)
-// PUT http://localhost:PORT/products/
+// PUT http://localhost:PORT/products/:name
 
 Se debe pasar el body de la siguiente forma:
 
@@ -71,4 +71,12 @@ Se debe pasar el body de la siguiente forma:
 
 
 9 - Borrar producto (deleteProduct)
-// PUT http://localhost:PORT/products/
+// DELETE http://localhost:PORT/products/:name
+
+
+
+10 - Comprar producto (buyProduct)
+// POST http://localhost:PORT/products/:name/buy
+
+Compramos un producto y se registra la compra (tabla transactions)
+
