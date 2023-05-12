@@ -4,6 +4,7 @@ const addProduct = require("./addProduct");
 const editProduct = require("./editProduct");
 const deleteProduct = require("./deleteProduct");
 const buyProduct = require("./buyProduct");
+const getPurchasedProducts = require("./getPurchasedProducts");
 
 module.exports = (db) = {
     getProducts,
@@ -11,6 +12,7 @@ module.exports = (db) = {
     addProduct,
     editProduct,
     deleteProduct,
-    buyProduct
+    buyProduct,
+    getPurchasedProducts
 
 }

@@ -80,3 +80,6 @@ Se debe pasar el body de la siguiente forma:
 
 Compramos un producto y se registra la compra (tabla transactions)
 
+
+11 - Consultar compras realizadas (getPurchasedProducts)
+// GET http://localhost:PORT/products/purchased
