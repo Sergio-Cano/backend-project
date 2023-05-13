@@ -7,6 +7,6 @@ module.exports = (db) => async (req, res, next) => {
     if(!result.ok) return next(errors[500]);
 
     res.status(200).json({
-        success: true,
+        success: true
     })
 }

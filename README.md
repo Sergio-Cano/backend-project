@@ -1,5 +1,27 @@
 ## PROYECTO BACKEND - PLATAFORMA DE VENTA ENTRE PARTICULARES
 
+En primer lugar, crea las tablas utilizando el siguiente archivo: sql/creations.sql
+
+Antes de hacer las inserciones, vamos a crear los siguientes usuarios (las inserciones de SQL van asociadas a estos usuarios,  necesitamos que estén creados antes en nuestra tabla de usuarios).
+
+// POST http://localhost:PORT/auth/register
+
+Pasamos los usuarios en el body en dos peticiones diferentes:
+
+{
+    "name": "testUser1",
+    "password": "1234"
+}
+
+-------------------------------------------
+
+{
+    "name": "testUser2",
+    "password": "5678"
+}
+
+Una vez hecho, ya puedes comenzar a utilizar los endpoints.
+
 1 - Comprobar listado de usuarios (getUsers)
 // GET http://localhost:PORT/users/
 
@@ -18,7 +40,6 @@ Devuelve toda la lista de productos, su precio y su vendedor.
 Devuelve el listado de productos de un único vendedor.
 
 
-# LOS SIGUIENTES MÉTODOS IMPLICARÁN ESTAR AUTENTICADO, POR LO QUE VAMOS A COMENZAR POR CREAR NUESTRO USUARIO
 
 4 - Creación de usuario (register)
 // POST http://localhost:PORT/auth/register

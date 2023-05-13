@@ -11,6 +11,6 @@ module.exports = (db) => async (req, res, next) => {
 
     res.status(200).json({
         success: true,
-        message: `${username} bought ${product}`
+        message: `You bought ${product}`
     })
 }

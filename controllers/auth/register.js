@@ -14,6 +14,7 @@ module.exports = (db) => async (req, res, next) => {
     if(!response) return next(errors[500]);
 
     res.status(200).json({
-        success: true
+        success: true,
+        message: `Welcome ${name}`
     })
 }
