@@ -24,6 +24,6 @@ CREATE TABLE IF NOT EXISTS messages (
     sender uuid NOT NULL,
     receiver uuid NOT NULL,
     message TEXT NOT NULL,
-    time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    time TIMESTAMP(0) DEFAULT CURRENT_TIMESTAMP,
     CHECK (sender != receiver)
 );

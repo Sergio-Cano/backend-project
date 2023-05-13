@@ -11,12 +11,14 @@ Devuelve la lista de usuarios y el número de productos que tiene a la venta cad
 
 Devuelve toda la lista de productos, su precio y su vendedor.
 
+
 3 - Ver listados de productos de un único vendedor (getProductsByVendor)
 // GET http://localhost:PORT/products/:vendor
 
 Devuelve el listado de productos de un único vendedor.
 
-# LOS SIGUIENTES MÉTODOS IMPLICARÁN ESTAR AUTENTICADO, POR LO QUE VAMOS A COMENZAR POR CREAR NUESTRO USUARIO Y REGISTRARNOS
+
+# LOS SIGUIENTES MÉTODOS IMPLICARÁN ESTAR AUTENTICADO, POR LO QUE VAMOS A COMENZAR POR CREAR NUESTRO USUARIO
 
 4 - Creación de usuario (register)
 // POST http://localhost:PORT/auth/register
@@ -47,7 +49,7 @@ Se debe pasar el body de la siguiente forma:
 # MÉTODOS QUE REQUIEREN ESTAR AUTENTICADO
 
 7 - Añadir producto (addProduct)
-// POST http://localhost:PORT/products/
+// POST http://localhost:PORT/products/new
 
 Este producto añadido se asociará a nuestro usuario (user -> vendor_id)
 
@@ -74,7 +76,6 @@ Se debe pasar el body de la siguiente forma:
 // DELETE http://localhost:PORT/products/:name
 
 
-
 10 - Comprar producto (buyProduct)
 // POST http://localhost:PORT/products/:name/buy
 
@@ -83,3 +84,21 @@ Compramos un producto y se registra la compra (tabla transactions)
 
 11 - Consultar compras realizadas (getPurchasedProducts)
 // GET http://localhost:PORT/products/purchased
+
+
+12 - Mandar mensaje a otro usuario (sendMessage)
+// POST http://localhost:PORT/users/chats/:name
+
+Mandamos el mensaje en el body de la siguiente forma:
+
+{
+    "message": "Hola, ¿cómo estás?"
+}
+
+
+13 - Ver chats con otros usuarios (getChat)
+// GET http://localhost:PORT/users/chats/:name
+
+Podemos consultar todos los mensajes enviados y recibidos con otro usuario.
+
+

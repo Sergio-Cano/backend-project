@@ -1,6 +1,6 @@
-const getUsers = require("./getUsers");
-
 module.exports = (db) = {
-    getUsers,
+    getUsers: require("./getUsers"),
+    sendMessage: require("./sendMessage"),
+    getChat: require("./getChat")
 
 }

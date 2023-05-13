@@ -79,7 +79,7 @@ INSERT INTO messages (
     (SELECT id FROM users WHERE name = 'testUser1'),
     (SELECT id FROM users WHERE name = 'testUser2'),
     '¿La cámara sigue disponible?',
-    '2023-05-09 10-00-00'
+    '2023-05-09 10:00:00'
 );
 
 INSERT INTO messages (
@@ -88,7 +88,7 @@ INSERT INTO messages (
     (SELECT id FROM users WHERE name = 'testUser2'),
     (SELECT id FROM users WHERE name = 'testUser1'),
     'Sí, aún está a la venta.',
-    '2023-05-09 10-01-20'
+    '2023-05-09 10:01:20'
 );
 
 INSERT INTO messages (
@@ -97,7 +97,7 @@ INSERT INTO messages (
     (SELECT id FROM users WHERE name = 'testUser1'),
     (SELECT id FROM users WHERE name = 'testUser2'),
     'Genial, ahora mismo la compro.',
-    '2023-05-09 10-02-40'
+    '2023-05-09 10:02:40'
 );
 
 INSERT INTO messages (
@@ -106,5 +106,5 @@ INSERT INTO messages (
     (SELECT id FROM users WHERE name = 'testUser2'),
     (SELECT id FROM users WHERE name = 'testUser1'),
     'Perfecto, ¡disfrútala!',
-    '2023-05-09 10-03-10'
+    '2023-05-09 10:03:10'
 );
